@@ -15,9 +15,10 @@ public class Seconds implements TimeUnit {
 	   */
 	  public String getLamps(int s) {
 	        if (0 == s % 2) {
-	        	LOG.debug("Top Yellow Bulb is ON for "+s + "seconds");
+	        	LOG.debug("Status of Top Yellow Lamp:: Y");
 	            return "Y";
 	        }
-	        return "0";
+	        LOG.debug("Status of Top Yellow Lamp:: O");
+	        return "O";
 	    }
 }

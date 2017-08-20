@@ -12,8 +12,8 @@ public class Minutes implements TimeUnit {
 	  private static final String RED_LIGHT = "R";
 	    private static final String YELLOW_LIGHT = "Y";
 	    // Switch OFF all Lamps
-	    private static final String ALL_FOUR_YELLOW_LIGHTS_OFF = "0000";
-	    private static final String ALL_ELVN_YELLOW_LIGHTS_OFF = "00000000000";
+	    private static final String ALL_FOUR_YELLOW_LIGHTS_OFF = "OOOO";
+	    private static final String ALL_ELVN_YELLOW_LIGHTS_OFF = "OOOOOOOOOOO";
 
 	    /**
 	     * This method is for third row which has 11 lamps, each lamp denotes 5 minutes.

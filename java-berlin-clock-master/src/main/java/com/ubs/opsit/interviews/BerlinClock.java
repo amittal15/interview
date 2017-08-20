@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
  * Berlin Clock Representation
  * Red Lamp ON 'R'
  * Yellow Lamp ON 'Y'
- * Lamp OFF '0'
+ * Lamp OFF 'O'
  */
 public class BerlinClock implements TimeConverter {
 	private static final Logger LOG = LoggerFactory.getLogger(BerlinClock.class);	
@@ -28,7 +28,7 @@ public class BerlinClock implements TimeConverter {
 	        
 	       //Pass the time in HH:mm:ss format to convert into Berlin Clock Representation
 	  
-	       LOG.debug("Berlin Clock Representation::\n"+berlinClock.convertTime("24:00:00"));
+	       LOG.debug("Berlin Clock Representation::\n"+berlinClock.convertTime("14:36:14"));
 	        
 	    }
 	    /**

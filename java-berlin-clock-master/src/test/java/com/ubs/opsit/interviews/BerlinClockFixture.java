@@ -14,7 +14,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class BerlinClockFixture {
 
     private TimeConverter berlinClock;
+    private TimeUnit timeUnit;
     private String theTime;
+    private int theHour;
+    private int theMinute;
+    private int theSecond;
+    
 
     @Test
     public void berlinClockAcceptanceTests() throws Exception {
@@ -27,10 +32,25 @@ public class BerlinClockFixture {
     @When("the time is $")
     public void whenTheTimeIs(String time) {
         theTime = time;
+        theHour = Integer.parseInt(time.split(":")[0]);
+        theMinute = Integer.parseInt(time.split(":")[1]);
+        theSecond = Integer.parseInt(time.split(":")[2]);
     }
 
     @Then("the clock should look like $")
     public void thenTheClockShouldLookLike(String theExpectedBerlinClockOutput) {
         assertThat(berlinClock.convertTime(theTime)).isEqualTo(theExpectedBerlinClockOutput);
+    }
+    @Then("the hour clock should look like $")
+    public void thenTheHourClockShouldLookLike(String theExpectedBerlinHourClockOutput) {
+        assertThat(timeUnit.getLamps(theHour)).isEqualTo(theExpectedBerlinHourClockOutput);
+    }
+    @Then("the minute clock should look like $")
+    public void thenTheMinuteClockShouldLookLike(String theExpectedBerlinMinuteClockOutput) {
+        assertThat(timeUnit.getLamps(theMinute)).isEqualTo(theExpectedBerlinMinuteClockOutput);
+    }
+    @Then("the second clock should look like $")
+    public void thenTheSecondClockShouldLookLike(String theExpectedBerlinSecondClockOutput) {
+        assertThat(timeUnit.getLamps(theSecond)).isEqualTo(theExpectedBerlinSecondClockOutput);
     }
 }

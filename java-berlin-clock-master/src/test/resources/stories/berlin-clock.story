@@ -16,6 +16,14 @@ OOOO
 OOOO
 OOOOOOOOOOO
 OOOO
+Then hour clock should look like
+OOOO
+OOOO
+Then minute clock should look like
+OOOOOOOOOOO
+OOOO
+Then second clock should look like
+Y
 
 Scenario: Middle of the afternoon
 When the time is 13:17:01
@@ -25,6 +33,14 @@ RROO
 RRRO
 YYROOOOOOOO
 YYOO
+Then hour clock should look like
+RROO
+RRRO
+Then minute clock should look like
+YYROOOOOOOO
+YYOO
+Then second clock should look like
+O
 
 Scenario: Just before midnight
 When the time is 23:59:59
@@ -34,6 +50,14 @@ RRRR
 RRRO
 YYRYYRYYRYY
 YYYY
+Then hour clock should look like
+RRRR
+RRRO
+Then minute clock should look like
+YYRYYRYYRYY
+YYYY
+Then second clock should look like
+O
 
 Scenario: Midnight
 When the time is 24:00:00
@@ -43,6 +67,15 @@ RRRR
 RRRR
 OOOOOOOOOOO
 OOOO
+Then hour clock should look like
+RRRR
+RRRR
+Then minute clock should look like
+OOOOOOOOOOO
+OOOO
+Then second clock should look like
+Y
+
 
 
 

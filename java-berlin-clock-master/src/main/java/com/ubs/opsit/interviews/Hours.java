@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 public class Hours implements TimeUnit {
 	private static final Logger LOG = LoggerFactory.getLogger(Hours.class);
 	// Switch Off all Red Lights
-	 private static final String ALL_RED_LIGHTS_OFF = "0000";
+	 private static final String ALL_RED_LIGHTS_OFF = "OOOO";
 	   
 	 	/** This is method for top row of Berlin Clock 
 	 	 * which has four red lamps and each represents 5 hours
